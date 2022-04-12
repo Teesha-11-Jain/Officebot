@@ -78,69 +78,6 @@ def stocks(tickers):
         Audfile.close()
 
 
-def Settings():
-    sg.theme('Dark')
-    with open("Jarinfo.json") as f:
-        contents = json.load(f)
-        User = contents["User"]
-        NewsApiKey = contents["NewsApiKey"]
-        OpenWeatherKey = contents["OpenWeatherKey"]
-        Country = contents["Country"]
-        City = contents["City"]
-        Outputsc = contents["Outputscreensize"]
-        Inputbr = contents["Inputbarsize"]
-    layout = [[sg.Text('Settings', font='Default 16')],
-              [sg.Text('Your-Details:--', font='Default 12')],
-              [sg.Text('Enter your information and Api-Keys.', font='Default 10')],
-              [sg.T('User-Name:', size=(13, 1)), sg.Input(
-                  User, key='-User-', size=(34, 1))],
-              [sg.T('NewsApiKey:', size=(13, 1)), sg.Input(
-                  NewsApiKey, key='-NewsApi-', size=(34, 1))],
-              [sg.T('OpenWeatherMap:', size=(14, 1)), sg.Input(
-                  OpenWeatherKey, key='-OpenWeather-', size=(33, 1))],
-              [sg.T('Current-Country:', size=(13, 1)), sg.Input(
-                  Country, key='-Country-', size=(34, 1))],
-              [sg.T('Current-City:', size=(13, 1)), sg.Input(
-                  City, key='-City-', size=(34, 1))],
-              [sg.Text('GUI-Customization:--', font='Default 12')],
-              [sg.Text('Enter only in Numbers to adjust the UI screen size.', font='Default 10')],
-              [sg.T('Output-Screen:', size=(13, 1)), sg.Input(
-                  Outputsc, key='-Outsc-', size=(34, 1))],
-              [sg.T('Input-bar:', size=(13, 1)), sg.Input(
-                  Inputbr, key='-Inbr-', size=(34, 1))],
-              [sg.Button('Save'), sg.Button('Exit')]]
-    window = sg.Window('Settings', layout, no_titlebar=True, keep_on_top=True)
-
-    while True:  # Event Loop
-        event, values = window.read()
-        if event in (sg.WIN_CLOSED, 'Exit'):
-            break
-        if event == 'Save':
-            User = values['-User-']
-            newsapikey = values['-NewsApi-']
-            weatherkey = values['-OpenWeather-']
-            Country = values['-Country-']
-            City = values['-City-']
-            Outputsc = values['-Outsc-']
-            Inputbr = values['-Inbr-']
-            dictionary = {
-                "!CAUTION!": "PLEASE REFRAIN from TAMPERING with the BELOW DATA!!!",
-                "User": User,
-                "NewsApiKey": newsapikey,
-                "OpenWeatherKey": weatherkey,
-                "Country": Country,
-                "City": City,
-                "Outputscreensize": Outputsc,
-                "Inputbarsize": Inputbr
-            }
-            json_object = json.dumps(dictionary, indent=4)
-            with open("Jarinfo.json", "w") as outfile:
-                outfile.write(json_object)
-            break
-    window.close()
-    event = window.read()
-    return event != 'OK'
-
 
 def send_an_email(from_address, to_address, subject, message_text, password):
     try:
@@ -199,25 +136,6 @@ def gmail():
         event = window.read()
         return event != 'OK'
 
-def Help():
-    sg.theme('Dark')
-    layout = [[sg.Text('Help Center', font='Default 14')],
-              [sg.Output(size=(60, 20), font=('Helvetica 10'))],
-              [sg.Button('GET HELP'), sg.Button('EXIT')]]
-    window = sg.Window('Help Center', layout, no_titlebar=True, keep_on_top=True)
-
-    while True:     # Event Loop
-        event, values = window.read()
-        if event in (sg.WIN_CLOSED, 'EXIT'):            # quit if exit button or X
-            break
-        if event == 'GET HELP':
-            with open ("Help.txt","r") as H:
-                print(H.read())
-            continue
-    window.close()
-    event = window.read()
-    return event != 'OK'
-
 
 with open("Jarinfo.json") as f:
     contents = json.load(f)
@@ -225,19 +143,15 @@ with open("Jarinfo.json") as f:
     LoadInput = contents["Inputbarsize"]
 sg.theme('DarkBlack')  # gives window a spiffy set of colors
 sg.set_options(element_padding=(3,3))
-# menu_def = [['&MENU ', ['&Settings', 'E&xit']],
-#             ['&HELP', ['&Help', '&Report Issue', '&Version']], 
-#             ['&ABOUT US', ['&Support Us', '&Our Website']], ]
-# sg.Menu(menu_def, tearoff=False)
+
 layout = [
           [sg.Text('BOT', size=(135, 1))],
-          [sg.Output(size=(LoadOutput, 38), font=('Times 14'))],
-          [sg.Multiline(size=(LoadInput, 2), enter_submits=True, key='-QUERY-', do_not_clear=False),
+          [sg.Output(size=(LoadOutput, 40), font=('Times 14'))],
+          [sg.Multiline(size=(LoadInput, 5), enter_submits=True, key='-QUERY-', do_not_clear=False),
            sg.Button('ENTER',size=(11,2), bind_return_key=True)]]
-# window = sg.Window('BOT', layout, location=(0,0) ,icon=r'icon/JarvisBot.ico', font=(
-#     'Helvetica', ' 13'), default_button_element_size=(8, 2)).Finalize()
-window = sg.Window('BOT', layout, location=(0,0), font=(
-    'Helvetica', ' 13'), default_button_element_size=(8, 2)).Finalize()
+
+window = sg.Window('BOT', layout, location=(10,10), font=(
+    'Helvetica', ' 13'), default_button_element_size=(10, 4)).Finalize()
 window.maximize()
 
 print("BOT: Welcome")
@@ -378,11 +292,7 @@ if __name__ == '__main__':
                                 Audfile.close()
                                 continue
 
-                        # elif "HEADLINES" in query:
-                        #     Breifing('News Headlines', 'Current Headlines(Enter country abbreviation in given field)')
-
-                        # elif "THE NEWS" in query:
-                        #     Breifing('News Headlines', 'Current Headlines(Enter country abbreviation in given field)')
+                
                         
                         elif "STOCKS" in query or "STOCK PRICE" in query:
                             query = query.replace('GET ME ', "")
@@ -418,8 +328,7 @@ if __name__ == '__main__':
                             Audfile.close()
 
 
-        elif event == 'Settings':
-            Settings()
+       
 
 
 window.close()
