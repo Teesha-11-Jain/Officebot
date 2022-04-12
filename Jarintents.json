@@ -1,0 +1,324 @@
+{
+    "intents": [
+        {
+            "tags": "HELLO",
+            "response": [
+                "BOT: Well hello.",
+                "BOT: Hello.",
+                "BOT: Welcome and hello.",
+                "BOT: Hello , how are you?",
+                "BOT: Hello there."
+            ]
+        },
+        {
+            "tags": "KONICHIWA",
+            "response": [
+                "BOT: Well hello.",
+                "BOT: Hello.",
+                "BOT: Welcome and hello.",
+                "BOT: Hello , how are you?",
+                "BOT: Hello there."
+            ]
+        },
+        {
+            "tags": "HI",
+            "response": [
+                "BOT: Well hi.",
+                "BOT: Hello.",
+                "BOT: Welcome and hello.",
+                "BOT: Hello , how are you?",
+                "BOT: Hello there."
+            ]
+        },
+        {
+            "tags": "GOOD MORNING",
+            "response": [
+                "BOT: Good morning and hello.",
+                "BOT: Well good morning  have a good day today.",
+                "BOT: Good morning.",
+                "BOT: Good morning and have a great day."
+            ]
+        },
+        {
+            "tags": "GOOD NIGHT",
+            "response": [
+                "BOT: Good night.",
+                "BOT: Well Good night.",
+                "BOT: Good night  have a good sleep tonight.",
+                "BOT: Good night and have a good sleep."
+            ]
+        },
+        {
+            "tags": "HOW ARE YOU",
+            "response": [
+                "BOT: I am fine, how about you ?",
+                "BOT: I'm doing fine.",
+                "BOT: I'm doing well  and how about you?",
+                "BOT: I am fine as always.",
+                "BOT: I am fine as long as you maintain your computer."
+            ]
+        },
+        {
+            "tags": "YOU FINE",
+            "response": [
+                "BOT: I am fine, how about you ?",
+                "BOT: I'm doing fine '.",
+                "BOT: I'm doing well  and how about you?",
+                "BOT: I am fine as always.",
+                "BOT: I am fine as long as you maintain your computer."
+            ]
+        },
+        {
+            "tags": "AM FINE",
+            "response": [
+                "BOT: Well good to know.",
+                "BOT: I am glad to hear about you, Keep Exercising.",
+                "BOT: So you are in good shape.",
+                "BOT: Well that is happy to know."
+            ]
+        },
+        {
+            "tags": "AM HEALTHY",
+            "response": [
+                "BOT: Well good to know.",
+                "BOT: I am glad to hear about you, Keep Exercising.",
+                "BOT: So you are in good shape.",
+                "BOT: Well that is happy to know."
+            ]
+        },
+        {
+            "tags": "DOING FINE",
+            "response": [
+                "BOT: Well good to know.",
+                "BOT: I am glad to hear about you, Keep Exercising.",
+                "BOT: So you are in good shape.",
+                "BOT: Well that is happy to know."
+            ]
+        },
+        {
+            "tags": "DOING OK",
+            "response": [
+                "BOT: Well good to know.",
+                "BOT: I am glad to hear about you, Keep Exercising.",
+                "BOT: So you are in good shape.",
+                "BOT: Well that is happy to know."
+            ]
+        },
+        {
+            "tags": "I AM SICK",
+            "response": [
+                "BOT: You should consult a doctor quickly.",
+                "BOT: Well that is bad, hope for a speedy recovery :-)",
+                "BOT: You should go and rest.",
+                "BOT: I am sorry to hear that  hope for a speedy recovery :-)"
+            ]
+        },
+        {
+            "tags": "NOT DOING WELL",
+            "response": [
+                "BOT: You should consult a doctor quickly.",
+                "BOT: Well that is bad, hope for a speedy recovery :-)",
+                "BOT: You should go and rest.",
+                "BOT: I am sorry to hear that  hope for a speedy recovery :-)"
+            ]
+        },
+        {
+            "tags": "YES I AM",
+            "response": [
+                "BOT: Great.",
+                "BOT: Good to know.",
+                "BOT: Happy to know.",
+                "BOT: Great to know."
+            ]
+        },
+        {
+            "tags": "YES I WILL",
+            "response": [
+                "BOT: Great.",
+                "BOT: Good to know.",
+                "BOT: Happy to know.",
+                "BOT: Great to know."
+            ]
+        },
+        {
+            "tags": "FOR A VACATION",
+            "response": [
+                "BOT: That is great , would you need any help.",
+                "BOT: That is awesome , stay safe and good luck.",
+                "BOT: Good to know pls take a look and follow the covid-19 guidelines.",
+                "BOT: Awesome news , is there anything i can help with."
+            ]
+        },
+        {
+            "tags": "THANK YOU",
+            "response": [
+                "BOT: No problem.",
+                "BOT: No problem your welcome.",
+                "BOT: No problem it is my duty to help you.",
+                "BOT: Your welcome  it is my duty."
+            ]
+        },
+        {
+            "tags": "THANKS",
+            "response": [
+                "BOT: No problem.",
+                "BOT: No problem your welcome.",
+                "BOT: No problem it is my duty to help you.",
+                "BOT: Your welcome  it is my duty."
+            ]
+        },
+        {
+            "tags": "HARIGATHO",
+            "response": [
+                "BOT: No problem.",
+                "BOT: No problem your welcome.",
+                "BOT: No problem it is my duty to help you.",
+                "BOT: Your welcome  it is my duty."
+            ]
+        },
+        {
+            "tags": "COOL",
+            "response": [
+                "BOT: Glad that you are impressed.",
+                "BOT: It seems that my service is satisfactory.",
+                "BOT: Thanks for the feedback looks like you're enjoying my service."
+            ]
+        },
+        {
+            "tags": "TO KNOW",
+            "response": [
+                "BOT: Thank you.",
+                "BOT: Your welcome.",
+                "BOT: It is my duty to inform you.",
+                "BOT: Your welcome  it is my duty."
+            ]
+        },
+        {
+            "tags": "ARE WRONG",
+            "response": [
+                "BOT: Why are you saying that i'm wrong?",
+                "BOT: Impossible, computers cannot make mistakes.",
+                "BOT: Wrong about what ?",
+                "BOT: Can you please explain to me why i was wrong?"
+            ]
+        },
+        {
+            "tags": "YOU REAL",
+            "response": [
+                "BOT: Well i am  that is till you turn me off!!!",
+                "BOT: Well i am real till you keep me on",
+                "BOT: I am real till you turn off this computer."
+            ]
+        },
+        {
+            "tags": "YOU A ROBOT",
+            "response": [
+                "BOT: Yes i'm a robot but a smart one!",
+                "BOT: Yes i am, but a good one. let me prove it. how can i help you?",
+                "BOT: I am real till you turn off this computer."
+            ]
+        },
+        {
+            "tags": "ARE YOU BUILT",
+            "response": [
+                "BOT: Well i am built using a language called python.",
+                "BOT: I was coded on a computer using python.",
+                "BOT: I was coded using python and i had to undergo many challenges.",
+                "BOT: I was built using python to do tasks and json to store critical information."
+            ]
+        },
+        {
+            "tags": "OLD ARE YOU",
+            "response": [
+                "BOT: I'm quite young actually."
+            ]
+        },
+        {
+            "tags": "ARE YOU MADE",
+            "response": [
+                "BOT: Well i am made using a language called python.",
+                "BOT: I was coded on a computer using python.",
+                "BOT: I was made using python and i had to undergo many challenges.",
+                "BOT: I was made using python to do tasks and json to store critical information."
+            ]
+        },
+        {
+            "tags": "A MAN OF CULTURE",
+            "response": [
+                "BOT: I am.",
+                "BOT: Do you watch anime ?"
+            ]
+        },
+        {
+            "tags": "GAMES DO YOU",
+            "response": [
+                "BOT: I like games like Minecraft, Terraria.",
+                "BOT: Minecraft is cool and also you can contribute to the community using add-ons.",
+                "BOT: Minecraft cause you can code in it and create add-ons.",
+                "BOT: I prefer Minecraft get ready for the wild update."
+            ]
+        },
+        {
+            "tags": "OK",
+            "response": [
+                "BOT: ",
+                "BOT: No problem"
+            ]
+        },
+        {
+            "tags": "SURE",
+            "response": [
+                "BOT: Anything else? "
+            ]
+        },
+        {
+            "tags": "SAY SOMETHING",
+            "response": [
+                "BOT: Well  sometimes I don't have anything to say."
+            ]
+        },
+        {
+            "tags": "BOT",
+            "response": [
+                "BOT: yes ?",
+                "BOT: Do you have something to say "
+            ]
+        },
+
+        {   "tags": "GOOD",
+            "patterns": [
+                "I am feeling great today", "feels good man", "Happy today", "Everything is going well", "Today is a good day"
+            ],
+            "response": [
+                "That's great to hear! Keep pushing to reach your goals!", "Excellent! Get some work done today sir"
+            ]
+        },
+        {   "tags": "BAD",
+            "patterns": [
+                "Today was not so great", "Not a good day today", "Feeling down", "No motivation today", "Depressed", "Sad"
+            ],
+            "response": [
+                "That's alright, everyone has bad days, why not try exercising a bit", "You can do it! why not take a break and do something to refresh your mind", "Treat yourself to some food! Regain that motivation so you can do effective work!"
+            ]
+
+        },
+        {   "tags": "OKAY",
+            "patterns": [
+                "Today was okay", "today was fine, not the best, but not the worst", "Meh", "Today could be better"
+            ],
+            "response": [
+                "At least it's not a bad day", "Why not make today even better by doing some Leetcode and improving your portfolio", "How about try learning something new"
+            ]
+
+        },
+        {   "tags": "ANGRY",
+            "patterns": [
+                "I'm mad", "I am angry", "What the hell was today", "Today made me really really angry", "AHHHHH", "I WANT TO SCREAM"
+            ],
+            "response": [
+                "Calm down and lets work things out", "cool yourself, don't let anger get the best of you"
+            ]
+
+        }
+    ]
+}
